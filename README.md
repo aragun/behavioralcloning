@@ -14,11 +14,11 @@ The deep neural network architecture from NVIDIA's End to End Learning for Self-
   * The image was resizd to (66,200,3) for input to the NVIDIA network.
   
 ## Training
-1. The best results were obtained for 40000 samples per epoch over 5 epochs. The Udacity dataset was used since recording my own training data from a keyboard did not give good results.
+1. The best results were obtained for 40000 samples per epoch over 5 epochs. The training data was collected by manually driving over portions of the track.
 2. Relu activation units were used to introduce non-linearity in the neural network.
 3. L2 regularization was used in all layers to prevent overfitting. Dropout didn't turn out to be as useful as using L2 regularization.
 4. Adam optimizer with a learning rate of 0.0001 was used. 
 5. A validation set was used during training. However, since mean squared error does not seem a very useful loss function for this task (since most of the steering angles are close to 0), the usefulness of the validation set is unclear.
 
 ## Results
-The model is able to drive around the test track safely at 0.1 throttle.
+The model is able to drive around the test track safely. Watch the video [here.](https://www.youtube.com/watch?v=S6y2VIWvR6A) 
